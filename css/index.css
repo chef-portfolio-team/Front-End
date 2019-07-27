@@ -1,3 +1,15 @@
+.btnMix {
+  margin-bottom: 13px;
+  height: auto;
+  width: auto;
+  padding: 10px 15px 15px 10px;
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  background-color: #D3D3D3;
+  border: 2px solid #708090;
+  border-radius: 10px;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -125,4 +137,165 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+header {
+  position: fixed;
+  border-bottom: 1px solid black;
+  border-spacing: 50px;
+  overflow-y: auto;
+}
+.logo {
+  max-height: 80px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.navBar {
+  margin-top: -40px;
+  margin-right: 80px;
+}
+a {
+  padding: 10px 15px 10px 15px;
+  color: black;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.hover:hover {
+  background-color: #fffdd0;
+}
+.sideBorder {
+  margin-right: 25px;
+  padding-right: 20px;
+}
+input {
+  border: none;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+.top {
+  margin-top: -10px;
+  height: 55px;
+  width: 240px;
+  margin-right: 20px;
+  font-size: 22px;
+  padding: 10px;
+  margin-left: -5px;
+}
+.btnMix:hover {
+  background-color: #DCDCDC;
+}
+.signUp {
+  margin-top: -10px;
+}
+body {
+  background-color: #f2f2f2;
+}
+.about {
+  margin-top: 25px;
+  padding: 0px 0px 20px 200px;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Arial Bold', sans-serif;
+}
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 30px;
+}
+.team {
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+}
+.box {
+  border-radius: 5px;
+  height: auto;
+  max-width: 300px;
+}
+.images {
+  display: block;
+  margin: auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+.teamInfo {
+  margin-top: 10px;
+  font-size: 1.7rem;
+  text-align: center;
+}
+ul {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  margin-right: 15px;
+  margin-left: 25px;
+}
+li {
+  display: flex;
+  flex-direction: row;
+}
+li a {
+  font-size: 40px;
+  display: block;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid black;
+}
+.linkedin:hover {
+  transition: 0.5s;
+  background-color: #0077B5;
+}
+.github:hover {
+  transition: 0.5s;
+  background-color: #6e5494;
+}
+.twitter:hover {
+  transition: 0.5s;
+  background-color: #00aced;
+}
+.bottomContent {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+.bottom {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.bottomInput {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: auto;
+  margin-top: 20px;
+  font-size: 22px;
+  padding: 10px;
+  text-align: start;
+  text-indent: 0px;
+}
+.btnMix .sendMsg {
+  margin-top: 20px;
+}
+.sendMsg:hover {
+  background-color: #DCDCDC;
 }
