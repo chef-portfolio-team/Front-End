@@ -2,18 +2,19 @@ body {
   background-color: #f2f2f2;
 }
 .about {
-  margin-top: 25px;
-  padding: 0px 0px 20px 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 150px 10px 10px 105px;
 }
-h2 {
-  font-size: 4.0rem;
+.about h2 {
+  font-size: 3rem;
   font-weight: bold;
-  font-family: 'Arial Bold', sans-serif;
+  font-family: "Arial Bold", sans-serif;
 }
-p {
-  font-size: 1.8rem;
+.about p {
+  font-size: 1.6rem;
   font-weight: 300;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .team {
   margin-right: 150px;
@@ -24,46 +25,56 @@ p {
   justify-content: center;
   justify-content: space-between;
 }
-.box {
-  border: 1px solid black;
-  border-radius: 5px;
-  height: auto;
+.team .box {
   max-width: 300px;
+  height: auto;
 }
-.images {
+.team .images {
   display: block;
   margin: auto;
   max-width: 200px;
   max-height: 200px;
 }
-h3 {
+.team h3 {
   font-size: 1.7rem;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
 }
-.teamInfo {
+.team .teamInfo {
   margin-top: 10px;
   font-size: 1.7rem;
   text-align: center;
 }
-ul {
+.team ul {
   margin-top: 15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-content: space-around;
-  margin-right: 15px;
-  margin-left: 25px;
 }
-li {
+.team ul li {
+  justify-content: space-between;
   display: flex;
-  flex-direction: row;
 }
-li a {
+.team ul li a {
+  padding: 4px;
   font-size: 40px;
   display: block;
   border-radius: 50%;
   background-color: white;
+  color: black;
   border: 1px solid black;
+}
+.team ul li .linkedin:hover {
+  background-color: white;
+}
+.team ul li .github:hover {
+  background-color: white;
+}
+.team ul li .twitter:hover {
+  background-color: white;
+}
+.team ul li .freeCodeCamp:hover {
+  background-color: white;
 }

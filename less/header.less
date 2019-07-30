@@ -1,67 +1,120 @@
 header {
-    position: fixed;
-    border-bottom: 1px solid black;
-    border-spacing: 50px;
-    overflow-y: auto;
-}
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  border-bottom: 1px solid @btnHover;
+  width: 100%;
+  height: auto;
+  background-color: black;
 
-.logo {
+  .logo {
     max-height: 80px;
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  nav {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    a {
+      padding: 10px 15px 10px 15px;
+      color: white;
+      margin-right: 25px;
+      font-size: 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    input {
+      display: flex;
+      align-items: center;
+      border: none;
+      border: solid 1px black;
+      border-radius: 10px;
+      height: 40px;
+      width: 240px;
+      margin-right: 20px;
+      font-size: 22px;
+      padding: 10px;
+    }
+    .signUp {
+      .btnMix;
+      display: flex;
+      align-items: center;
+      // margin-top: -10px;
+      margin-right: 25px;
+    }
+  }
 }
 
-.navBar {
-    margin-top: -40px;
-    margin-right: 80px;
-}
+@media screen and(max-width: 500px) {
+  header {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    height: auto;
+    overflow-y: auto;
+    background-color: black;
 
-a {
-    padding: 10px 15px 10px 15px;
-    color: black;
-    margin-right: 25px;
-    margin-bottom: 15px;
-    font-size: 2.0rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-}
+    .logo {
+      margin: auto;
+      max-height: 80px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
 
-.hover:hover {
-    background-color: @aBackground;
+    nav {
+      color: white;
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        color: white;
+        margin: auto;
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+      .overLink:hover {
+        background-color: black;
+      }
+      input {
+        display: none;
+        border: none;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        height: 55px;
+        font-size: 22px;
+        padding: 10px;
+      }
+      .signUp {
+        display: none;
+        .btnMix;
+        margin-top: -10px;
+        margin-right: 25px;
+      }
+      .signUp:hover {
+        background-color: @btnHover;
+      }
+    }
+  }
 }
 
 // .borderRight {
 //     border-right: 1px solid black;
 // }
 
-.sideBorder {
-    margin-right: 25px;
-    padding-right: 20px;
-}
-
-input {
-      border: none; 
-      border: solid 1px black;
-      border-radius: 10px;
-}
-
-.top {
-    margin-top: -10px;
-    height: 55px;
-    width: 240px; 
-    margin-right: 20px;
-    font-size: 22px;
-    padding: 10px;
-    margin-left: -5px;
-}
-
-
-
-.btnMix:hover {
-    background-color: @btnHover;
-}
-
-.signUp {
-    margin-top: -10px;
-}
+// .sideBorder {
+//     margin-right: 25px;
+//     padding-right: 20px;
+// }-
