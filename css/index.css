@@ -151,10 +151,12 @@ header {
   background-color: black;
 }
 header .logo {
-  max-height: 80px;
+  display: block;
+  width: 200px;
+  height: 80px;
   margin-left: 100px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 header nav {
   margin-top: 50px;
@@ -281,12 +283,12 @@ body {
   color: white;
   font-size: 1.6rem;
   font-weight: 300;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 .team {
   margin-right: 150px;
   margin-left: 150px;
-  margin-top: 50px;
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -337,19 +339,19 @@ body {
   border: 1px solid black;
 }
 .team ul li .linkedin:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   background-color: #0077B5;
 }
 .team ul li .github:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   background-color: #6e5494;
 }
 .team ul li .twitter:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   background-color: #00aced;
 }
 .team ul li .freeCodeCamp:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   background-color: #006400;
 }
 @media screen and (max-width: 500px) {
@@ -473,6 +475,9 @@ footer .bottom .sendMsg {
   background-color: #D3D3D3;
   border: 2px solid #708090;
   border-radius: 10px;
+}
+footer .bottom .sendMsg:hover {
+  background-color: #DCDCDC;
 }
 @media screen and (max-width: 500px) {
   .bottomInput {
