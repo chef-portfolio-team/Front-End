@@ -3,58 +3,120 @@ html {
   font-size: 62.5%;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  border-bottom: 1px solid @btnHover;
-  width: 100%;
-  height: auto;
-  background-color: black;
-
-  .logo {
-    display: block;
-    width: 200px;
-    height: 80px;
-    margin-left: 100px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-
-  nav {
-    margin-top: 50px;
+@media screen and(min-width: 1000px) {
+  header {
     display: flex;
-    align-items: center;
-    a {
-      padding: 10px 15px 10px 15px;
-      color: white;
-      margin-right: 25px;
-      font-size: 3rem;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 5px;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: 1px solid @btnHover;
+    width: 100%;
+    height: auto;
+    background-color: black;
+
+    .logo {
+      display: block;
+      width: 200px;
+      height: 80px;
+      margin-left: 100px;
+      margin-top: 25px;
+      margin-bottom: 25px;
     }
 
-    input {
+    nav {
+      margin-top: 50px;
       display: flex;
       align-items: center;
-      border: none;
-      border: solid 1px black;
-      border-radius: 10px;
-      height: 40px;
-      width: 240px;
-      margin-right: 20px;
-      font-size: 22px;
-      padding: 10px;
-    }
-    .signUp {
-      .btnMix;
-      display: flex;
-      align-items: center;
-      margin-right: 25px;
+      a {
+        padding: 10px 15px 10px 15px;
+        color: white;
+        margin-right: 25px;
+        font-size: 3rem;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      input {
+        display: flex;
+        align-items: center;
+        border: none;
+        border: solid 1px black;
+        border-radius: 10px;
+        height: 40px;
+        width: 240px;
+        margin-right: 20px;
+        font-size: 22px;
+        padding: 10px;
+      }
+      .signUp {
+        .btnMix;
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+      }
     }
   }
 }
+@media screen and(min-width: 510px) and (max-width: 1000px) {
+  header {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid white;
+    height: auto;
+    overflow-y: auto;
+    background-color: black;
+
+    .logo {
+      margin: auto;
+      max-height: 80px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav {
+      color: white;
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        color: white;
+        margin: auto;
+        font-size: 3rem;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+      .overLink:hover {
+        background-color: black;
+      }
+      input {
+        display: none;
+        border: none;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        height: 55px;
+        font-size: 22px;
+        padding: 10px;
+      }
+      .signUp {
+        display: none;
+        .btnMix;
+        margin-top: -10px;
+        margin-right: 25px;
+      }
+      .signUp:hover {
+        background-color: @btnHover;
+      }
+    }
+  }
+}
+
 
 @media screen and(max-width: 500px) {
   header {
@@ -69,6 +131,7 @@ header {
     background-color: black;
 
     .logo {
+      display: block;
       margin: auto;
       max-height: 80px;
       margin-top: 10px;

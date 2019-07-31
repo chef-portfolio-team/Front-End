@@ -1,113 +1,219 @@
 html {
   font-size: 62.5%;
 }
-
 body {
   background-color: black;
 }
-//#f2f2f2
-.about {
-  display: flex;
-  flex-direction: column;
-  padding: 150px 10px 10px 105px;
-  h2 {
-    padding-top: 10px;
-    color: white;
-    font-size: 4rem;
-    font-weight: bold;
-    font-family: "Arial Bold", sans-serif;
-  }
-  p {
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 300;
-    margin-top: 25px;
-  }
-}
 
-.team {
-  margin-right: 150px;
-  margin-left: 150px;
-  margin-top: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-between;
-
-  .box {
-    // border: 1px solid black;
-    max-width: 300px;
-    height: auto;
+@media screen and(min-width: 1000px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 10px 10px 105px;
+    h2 {
+      padding-top: 10px;
+      color: white;
+      font-size: 4rem;
+      font-weight: bold;
+      font-family: "Arial Bold", sans-serif;
+    }
+    p {
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin-top: 25px;
+    }
   }
 
-  .images {
-    display: block;
-    margin: auto;
-    max-width: 200px;
-    max-height: 200px;
-  }
-
-  h3 {
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-  }
-  .teamInfo {
-    color: white;
-    margin-top: 10px;
-    font-size: 2rem;
-    text-align: center;
-  }
-  ul {
-    margin-top: 15px;
+  .team {
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    li {
+    .box {
+      // border: 1px solid black;
+      max-width: 300px;
+      height: auto;
+    }
+
+    .images {
+      display: block;
+      margin: auto;
+      max-width: 200px;
+      max-height: 200px;
+    }
+
+    h3 {
       color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .teamInfo {
+      color: white;
+      margin-top: 10px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    ul {
+      margin-top: 15px;
       display: flex;
-      justify-content: space-between;
-      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: space-around;
 
-      a {
-        padding: 4px;
-        font-size: 4rem;
-        display: block;
-        border-radius: 50%;
-        background-color: black;
+      li {
         color: white;
-        border: 1px solid black;
-      }
-      .linkedin:hover {
-        transition: 0.2s;
-        background-color: @linkedin;
-      }
+        display: flex;
+        justify-content: space-between;
+        display: flex;
 
-      .github:hover {
-        transition: 0.2s;
-        background-color: @github;
-      }
+        a {
+          padding: 4px;
+          font-size: 4rem;
+          display: block;
+          border-radius: 50%;
+          background-color: black;
+          color: white;
+          border: 1px solid black;
+        }
+        .linkedin:hover {
+          transition: 0.2s;
+          background-color: @linkedin;
+        }
 
-      .twitter:hover {
-        transition: 0.2s;
-        background-color: @twitter;
-      }
+        .github:hover {
+          transition: 0.2s;
+          background-color: @github;
+        }
 
-      .freeCodeCamp:hover {
-        transition: 0.2s;
-        background-color: @freeCodeCamp;
+        .twitter:hover {
+          transition: 0.2s;
+          background-color: @twitter;
+        }
+
+        .freeCodeCamp:hover {
+          transition: 0.2s;
+          background-color: @freeCodeCamp;
+        }
       }
     }
   }
 }
-@media screen and(max-width: 500px) {
-  body {
-    width: auto;
+
+@media screen and(min-width: 501px) and (max-width: 1000px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    h2 {
+      text-align: center;
+      padding-top: 10px;
+      color: white;
+      font-size: 4rem;
+      font-weight: bold;
+      font-family: "Arial Bold", sans-serif;
+    }
+    p {
+      text-align: center;
+      color: white;
+      font-size: 2.5rem;
+      font-weight: 300;
+      margin-top: 25px;
+    }
   }
+
+  .team {
+    margin: 60px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    
+    // justify-content: space-between;
+
+    .box {
+      margin: 10px 0px;
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      height: auto;
+    }
+
+    .images {
+      display: block;
+      margin: auto;
+      max-width: 200px;
+      max-height: 200px;
+    }
+
+    h3 {
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .teamInfo {
+      
+      color: white;
+      margin-top: 10px;
+      font-size: 2rem;
+      text-align: center;
+    }
+    ul {
+      margin-top: 15px;
+      // padding-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: space-around;
+
+      li {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        display: flex;
+
+        a {
+          padding: 4px;
+          font-size: 4rem;
+          display: block;
+          border-radius: 50%;
+          background-color: black;
+          color: white;
+          border: 1px solid black;
+        }
+        .linkedin:hover {
+          transition: 0.2s;
+          background-color: @linkedin;
+        }
+
+        .github:hover {
+          transition: 0.2s;
+          background-color: @github;
+        }
+
+        .twitter:hover {
+          transition: 0.2s;
+          background-color: @twitter;
+        }
+
+        .freeCodeCamp:hover {
+          transition: 0.2s;
+          background-color: @freeCodeCamp;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 500px) {
   .about {
     margin-top: 10px;
     padding: 5px 10;
@@ -117,11 +223,13 @@ body {
     h2 {
       margin: auto;
       font-size: 4rem;
+      color: white;
       font-weight: bold;
       font-family: "Arial Bold", sans-serif;
     }
     p {
       text-align: center;
+      color: white;
       font-size: 2rem;
       font-weight: 300;
       margin-top: 10px;
@@ -146,12 +254,14 @@ body {
     }
 
     h3 {
+      color: white;
       font-size: 3rem;
       font-weight: bold;
       text-align: center;
       margin-top: 20px;
     }
     .teamInfo {
+      color: white;
       text-align: center;
       margin-top: 10px;
       margin-bottom: 10px;
@@ -168,7 +278,6 @@ body {
       li {
         display: flex;
         justify-content: space-between;
-        
 
         a {
           padding: 4px;

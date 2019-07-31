@@ -145,71 +145,73 @@ html {
   /* Best Practice */
   font-size: 62.5%;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  border-bottom: 1px solid #DCDCDC;
-  width: 100%;
-  height: auto;
-  background-color: black;
+@media screen and (min-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: 1px solid #DCDCDC;
+    width: 100%;
+    height: auto;
+    background-color: black;
+  }
+  header .logo {
+    display: block;
+    width: 200px;
+    height: 80px;
+    margin-left: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  header nav {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+  }
+  header nav a {
+    padding: 10px 15px 10px 15px;
+    color: white;
+    margin-right: 25px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  header nav input {
+    display: flex;
+    align-items: center;
+    border: none;
+    border: solid 1px black;
+    border-radius: 10px;
+    height: 40px;
+    width: 240px;
+    margin-right: 20px;
+    font-size: 22px;
+    padding: 10px;
+  }
+  header nav .signUp {
+    margin-bottom: 13px;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 15px 10px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    border: 2px solid #708090;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+  }
 }
-header .logo {
-  display: block;
-  width: 200px;
-  height: 80px;
-  margin-left: 100px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-header nav {
-  margin-top: 50px;
-  display: flex;
-  align-items: center;
-}
-header nav a {
-  padding: 10px 15px 10px 15px;
-  color: white;
-  margin-right: 25px;
-  font-size: 3rem;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-}
-header nav input {
-  display: flex;
-  align-items: center;
-  border: none;
-  border: solid 1px black;
-  border-radius: 10px;
-  height: 40px;
-  width: 240px;
-  margin-right: 20px;
-  font-size: 22px;
-  padding: 10px;
-}
-header nav .signUp {
-  margin-bottom: 13px;
-  height: auto;
-  width: auto;
-  padding: 10px 15px 15px 10px;
-  font-size: 2.4rem;
-  color: black;
-  font-weight: bold;
-  background-color: #D3D3D3;
-  border: 2px solid #708090;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  margin-right: 25px;
-}
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 510px) and (max-width: 1000px) {
   header {
     color: white;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     border-bottom: 1px solid white;
     height: auto;
     overflow-y: auto;
@@ -269,103 +271,261 @@ header nav .signUp {
     background-color: #DCDCDC;
   }
 }
+@media screen and (max-width: 500px) {
+  header {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    height: auto;
+    overflow-y: auto;
+    background-color: black;
+  }
+  header .logo {
+    display: block;
+    margin: auto;
+    max-height: 80px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  header nav {
+    color: white;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav a {
+    color: white;
+    margin: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  header nav .overLink:hover {
+    background-color: black;
+  }
+  header nav input {
+    display: none;
+    border: none;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 55px;
+    font-size: 22px;
+    padding: 10px;
+  }
+  header nav .signUp {
+    display: none;
+    margin-bottom: 13px;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 15px 10px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    border: 2px solid #708090;
+    border-radius: 10px;
+    margin-top: -10px;
+    margin-right: 25px;
+  }
+  header nav .signUp:hover {
+    background-color: #DCDCDC;
+  }
+}
 html {
   font-size: 62.5%;
 }
 body {
   background-color: black;
 }
-.about {
-  display: flex;
-  flex-direction: column;
-  padding: 150px 10px 10px 105px;
+@media screen and (min-width: 1000px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 10px 10px 105px;
+  }
+  .about h2 {
+    padding-top: 10px;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Arial Bold", sans-serif;
+  }
+  .about p {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 25px;
+  }
+  .team {
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .team .box {
+    max-width: 300px;
+    height: auto;
+  }
+  .team .images {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .team h3 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .team .teamInfo {
+    color: white;
+    margin-top: 10px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .team ul {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .team ul li {
+    color: white;
+    justify-content: space-between;
+    display: flex;
+  }
+  .team ul li a {
+    padding: 4px;
+    font-size: 4rem;
+    display: block;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+  }
+  .team ul li .linkedin:hover {
+    transition: 0.2s;
+    background-color: #0077B5;
+  }
+  .team ul li .github:hover {
+    transition: 0.2s;
+    background-color: #6e5494;
+  }
+  .team ul li .twitter:hover {
+    transition: 0.2s;
+    background-color: #00aced;
+  }
+  .team ul li .freeCodeCamp:hover {
+    transition: 0.2s;
+    background-color: #006400;
+  }
 }
-.about h2 {
-  padding-top: 10px;
-  color: white;
-  font-size: 4rem;
-  font-weight: bold;
-  font-family: "Arial Bold", sans-serif;
-}
-.about p {
-  color: white;
-  font-size: 2.5rem;
-  font-weight: 300;
-  margin-top: 25px;
-}
-.team {
-  margin-right: 150px;
-  margin-left: 150px;
-  margin-top: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-between;
-}
-.team .box {
-  max-width: 300px;
-  height: auto;
-}
-.team .images {
-  display: block;
-  margin: auto;
-  max-width: 200px;
-  max-height: 200px;
-}
-.team h3 {
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
-}
-.team .teamInfo {
-  color: white;
-  margin-top: 10px;
-  font-size: 2rem;
-  text-align: center;
-}
-.team ul {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
-}
-.team ul li {
-  color: white;
-  justify-content: space-between;
-  display: flex;
-}
-.team ul li a {
-  padding: 4px;
-  font-size: 4rem;
-  display: block;
-  border-radius: 50%;
-  background-color: black;
-  color: white;
-  border: 1px solid black;
-}
-.team ul li .linkedin:hover {
-  transition: 0.2s;
-  background-color: #0077B5;
-}
-.team ul li .github:hover {
-  transition: 0.2s;
-  background-color: #6e5494;
-}
-.team ul li .twitter:hover {
-  transition: 0.2s;
-  background-color: #00aced;
-}
-.team ul li .freeCodeCamp:hover {
-  transition: 0.2s;
-  background-color: #006400;
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+  .about h2 {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Arial Bold", sans-serif;
+  }
+  .about p {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 25px;
+  }
+  .team {
+    margin: 60px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  .team .box {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    height: auto;
+  }
+  .team .images {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .team h3 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .team .teamInfo {
+    color: white;
+    margin-top: 10px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .team ul {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .team ul li {
+    color: white;
+    justify-content: space-between;
+    display: flex;
+  }
+  .team ul li a {
+    padding: 4px;
+    font-size: 4rem;
+    display: block;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+  }
+  .team ul li .linkedin:hover {
+    transition: 0.2s;
+    background-color: #0077B5;
+  }
+  .team ul li .github:hover {
+    transition: 0.2s;
+    background-color: #6e5494;
+  }
+  .team ul li .twitter:hover {
+    transition: 0.2s;
+    background-color: #00aced;
+  }
+  .team ul li .freeCodeCamp:hover {
+    transition: 0.2s;
+    background-color: #006400;
+  }
 }
 @media screen and (max-width: 500px) {
-  body {
-    width: auto;
-  }
   .about {
     margin-top: 10px;
     padding: 5px 10;
@@ -375,11 +535,13 @@ body {
   .about h2 {
     margin: auto;
     font-size: 4rem;
+    color: white;
     font-weight: bold;
     font-family: "Arial Bold", sans-serif;
   }
   .about p {
     text-align: center;
+    color: white;
     font-size: 2rem;
     font-weight: 300;
     margin-top: 10px;
@@ -402,12 +564,14 @@ body {
     max-height: 200px;
   }
   .team h3 {
+    color: white;
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
   }
   .team .teamInfo {
+    color: white;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -450,48 +614,99 @@ body {
 html {
   font-size: 62.5%;
 }
-footer .bottomContent {
-  color: white;
-  margin-top: 50px;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
+@media screen and (min-width: 1000px) {
+  footer .bottomContent {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  footer .bottom {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .bottom .bottomInput {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    border: solid 1px #DCDCDC;
+    border-radius: 10px;
+  }
+  footer .bottom .sendMsg {
+    margin-top: 30px;
+    margin-bottom: 13px;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 15px 10px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    border: 2px solid #708090;
+    border-radius: 10px;
+  }
+  footer .bottom .sendMsg:hover {
+    background-color: #DCDCDC;
+  }
 }
-footer .bottom {
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-footer .bottom .bottomInput {
-  display: flex;
-  justify-content: space-between;
-  width: 500px;
-  height: auto;
-  margin-top: 20px;
-  font-size: 2rem;
-  padding: 10px;
-  border: none;
-  border: solid 1px #DCDCDC;
-  border-radius: 10px;
-}
-footer .bottom .sendMsg {
-  margin-top: 30px;
-  margin-bottom: 13px;
-  height: auto;
-  width: auto;
-  padding: 10px 15px 15px 10px;
-  font-size: 2.4rem;
-  color: black;
-  font-weight: bold;
-  background-color: #D3D3D3;
-  border: 2px solid #708090;
-  border-radius: 10px;
-}
-footer .bottom .sendMsg:hover {
-  background-color: #DCDCDC;
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  footer .bottomContent {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  footer .bottom {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer .bottom .bottomInput {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    border: solid 1px #DCDCDC;
+    border-radius: 10px;
+  }
+  footer .bottom .sendMsg {
+    margin-top: 30px;
+    margin-bottom: 13px;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 15px 10px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    border: 2px solid #708090;
+    border-radius: 10px;
+  }
+  footer .bottom .sendMsg:hover {
+    background-color: #DCDCDC;
+  }
 }
 @media screen and (max-width: 500px) {
+  .bottom {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
   .bottomInput {
     display: flex;
     justify-content: space-between;
@@ -506,7 +721,16 @@ footer .bottom .sendMsg:hover {
   }
   .sendMsg {
     margin-top: 30px;
-    background-color: white;
+    margin-bottom: 13px;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 15px 10px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    border: 2px solid #708090;
+    border-radius: 10px;
   }
   .sendMsg:hover {
     background-color: white;

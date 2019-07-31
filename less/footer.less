@@ -2,42 +2,91 @@ html {
   font-size: 62.5%;
 }
 
-footer {
-  .bottomContent {
-    color: white;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
+@media screen and(min-width: 1000px) {
+  footer {
+    .bottomContent {
+      color: white;
+      margin-top: 50px;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .bottom {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .bottomInput {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        height: auto;
+        margin-top: 20px;
+        font-size: 2rem;
+        padding: 10px;
+        border: none;
+        border: solid 1px @btnHover;
+        border-radius: 10px;
+      }
+      .sendMsg {
+        margin-top: 30px;
+        .btnMix;
+      }
+      .sendMsg:hover {
+        background-color: @btnHover;
+      }
+    }
   }
+}
+
+@media screen and(min-width: 501px) and (max-width: 1000px) {
+  footer {
+    .bottomContent {
+      color: white;
+      margin-top: 50px;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .bottom {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .bottomInput {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        height: auto;
+        margin-top: 20px;
+        font-size: 2rem;
+        padding: 10px;
+        border: none;
+        border: solid 1px @btnHover;
+        border-radius: 10px;
+      }
+      .sendMsg {
+        margin-top: 30px;
+        .btnMix;
+      }
+      .sendMsg:hover {
+        background-color: @btnHover;
+      }
+    }
+  }
+
+
+}
+
+@media screen and(max-width: 500px) {
   .bottom {
     margin-bottom: 30px;
     display: flex;
     align-items: center;
-    flex-direction: column;
-
-    .bottomInput {
-      display: flex;
-      justify-content: space-between;
-      width: 500px;
-      height: auto;
-      margin-top: 20px;
-      font-size: 2rem;
-      padding: 10px;
-      border: none;
-      border: solid 1px @btnHover;
-      border-radius: 10px;
-    }
-    .sendMsg {
-      margin-top: 30px;
-      .btnMix;
-    }
-    .sendMsg:hover {
-      background-color: @btnHover;
-    }
+    flex-direction: column
   }
-}
-@media screen and(max-width: 500px) {
   .bottomInput {
     display: flex;
     justify-content: space-between;
@@ -52,9 +101,10 @@ footer {
   }
   .sendMsg {
     margin-top: 30px;
-   .mobileBtnMix;
+    .btnMix;
   }
   .sendMsg:hover {
-   .mobileBtnMix;
+    .mobileBtnMix;
   }
 }
+
