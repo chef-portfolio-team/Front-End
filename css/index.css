@@ -3,7 +3,7 @@
   height: auto;
   width: auto;
   padding: 10px 15px 15px 10px;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: black;
   font-weight: bold;
   background-color: #D3D3D3;
@@ -141,6 +141,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  /* Best Practice */
+  font-size: 62.5%;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -167,7 +171,7 @@ header nav a {
   padding: 10px 15px 10px 15px;
   color: white;
   margin-right: 25px;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
@@ -189,7 +193,7 @@ header nav .signUp {
   height: auto;
   width: auto;
   padding: 10px 15px 15px 10px;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: black;
   font-weight: bold;
   background-color: #D3D3D3;
@@ -227,7 +231,7 @@ header nav .signUp {
   header nav a {
     color: white;
     margin: auto;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
@@ -252,7 +256,7 @@ header nav .signUp {
     height: auto;
     width: auto;
     padding: 10px 15px 15px 10px;
-    font-size: 24px;
+    font-size: 2.4rem;
     color: black;
     font-weight: bold;
     background-color: #D3D3D3;
@@ -265,6 +269,9 @@ header nav .signUp {
     background-color: #DCDCDC;
   }
 }
+html {
+  font-size: 62.5%;
+}
 body {
   background-color: black;
 }
@@ -274,14 +281,15 @@ body {
   padding: 150px 10px 10px 105px;
 }
 .about h2 {
+  padding-top: 10px;
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   font-family: "Arial Bold", sans-serif;
 }
 .about p {
   color: white;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   font-weight: 300;
   margin-top: 25px;
 }
@@ -306,7 +314,7 @@ body {
 }
 .team h3 {
   color: white;
-  font-size: 1.7rem;
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
@@ -314,7 +322,7 @@ body {
 .team .teamInfo {
   color: white;
   margin-top: 10px;
-  font-size: 1.7rem;
+  font-size: 2rem;
   text-align: center;
 }
 .team ul {
@@ -331,7 +339,7 @@ body {
 }
 .team ul li a {
   padding: 4px;
-  font-size: 40px;
+  font-size: 4rem;
   display: block;
   border-radius: 50%;
   background-color: black;
@@ -366,13 +374,13 @@ body {
   }
   .about h2 {
     margin: auto;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     font-family: "Arial Bold", sans-serif;
   }
   .about p {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 300;
     margin-top: 10px;
   }
@@ -394,7 +402,7 @@ body {
     max-height: 200px;
   }
   .team h3 {
-    font-size: 1.7rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
@@ -403,7 +411,7 @@ body {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .team ul {
     margin-top: 5px;
@@ -419,7 +427,7 @@ body {
   }
   .team ul li a {
     padding: 4px;
-    font-size: 40px;
+    font-size: 3rem;
     display: block;
     border-radius: 50%;
     background-color: white;
@@ -439,10 +447,14 @@ body {
     background-color: white;
   }
 }
+html {
+  font-size: 62.5%;
+}
 footer .bottomContent {
+  color: white;
   margin-top: 50px;
   text-align: center;
-  font-size: 2.6rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 footer .bottom {
@@ -457,7 +469,7 @@ footer .bottom .bottomInput {
   width: 500px;
   height: auto;
   margin-top: 20px;
-  font-size: 22px;
+  font-size: 2rem;
   padding: 10px;
   border: none;
   border: solid 1px #DCDCDC;
@@ -469,7 +481,7 @@ footer .bottom .sendMsg {
   height: auto;
   width: auto;
   padding: 10px 15px 15px 10px;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: black;
   font-weight: bold;
   background-color: #D3D3D3;
@@ -486,7 +498,7 @@ footer .bottom .sendMsg:hover {
     max-width: 300px;
     height: auto;
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 2rem;
     padding: 10px;
     border: none;
     border: solid 1px #DCDCDC;

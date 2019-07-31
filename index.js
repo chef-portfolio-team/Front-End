@@ -29,4 +29,3 @@ for (i = 0; i < signUp.length; i++)
       event.target.style.background = "#D3D3D3";
     });
   })(i);
-
