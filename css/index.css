@@ -146,7 +146,7 @@ html {
   font-size: 62.5%;
 }
 @media screen and (min-width: 1000px) {
-  header {
+  .topSection {
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -155,7 +155,7 @@ html {
     height: auto;
     background-color: black;
   }
-  header .logo {
+  .topSection .logo {
     display: block;
     width: 200px;
     height: 80px;
@@ -163,12 +163,12 @@ html {
     margin-top: 25px;
     margin-bottom: 25px;
   }
-  header nav {
+  .topSection .navBar {
     margin-top: 50px;
     display: flex;
     align-items: center;
   }
-  header nav a {
+  .topSection .navBar .aLinks {
     padding: 10px 15px 10px 15px;
     color: white;
     margin-right: 25px;
@@ -177,7 +177,7 @@ html {
     text-decoration: none;
     border-radius: 5px;
   }
-  header nav input {
+  .topSection .navBar input {
     display: flex;
     align-items: center;
     border: none;
@@ -189,7 +189,7 @@ html {
     font-size: 22px;
     padding: 10px;
   }
-  header nav .signUp {
+  .topSection .navBar .signUp {
     margin-bottom: 13px;
     height: auto;
     width: auto;
@@ -206,7 +206,7 @@ html {
   }
 }
 @media screen and (min-width: 510px) and (max-width: 1000px) {
-  header {
+  .topSection {
     color: white;
     position: relative;
     display: flex;
@@ -217,20 +217,20 @@ html {
     overflow-y: auto;
     background-color: black;
   }
-  header .logo {
+  .topSection .logo {
     margin: auto;
     max-height: 80px;
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  header nav {
+  .topSection .navBar {
     color: white;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  header nav a {
+  .topSection .navBar .aLinks {
     color: white;
     margin: auto;
     font-size: 3rem;
@@ -239,10 +239,10 @@ html {
     border-radius: 5px;
     margin-bottom: 15px;
   }
-  header nav .overLink:hover {
+  .topSection .navBar .overLink:hover {
     background-color: black;
   }
-  header nav input {
+  .topSection .navBar input {
     display: none;
     border: none;
     border: solid 1px black;
@@ -252,7 +252,7 @@ html {
     font-size: 22px;
     padding: 10px;
   }
-  header nav .signUp {
+  .topSection .navBar .signUp {
     display: none;
     margin-bottom: 13px;
     height: auto;
@@ -267,12 +267,12 @@ html {
     margin-top: -10px;
     margin-right: 25px;
   }
-  header nav .signUp:hover {
+  .topSection .navBar .signUp:hover {
     background-color: #DCDCDC;
   }
 }
 @media screen and (max-width: 500px) {
-  header {
+  .topSection {
     color: white;
     position: relative;
     display: flex;
@@ -283,21 +283,21 @@ html {
     overflow-y: auto;
     background-color: black;
   }
-  header .logo {
+  .topSection .logo {
     display: block;
     margin: auto;
     max-height: 80px;
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  header nav {
+  .topSection .navBar {
     color: white;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  header nav a {
+  .topSection .navBar .aLinks {
     color: white;
     margin: auto;
     font-size: 3rem;
@@ -306,10 +306,10 @@ html {
     border-radius: 5px;
     margin-bottom: 15px;
   }
-  header nav .overLink:hover {
+  .topSection .navBar .overLink:hover {
     background-color: black;
   }
-  header nav input {
+  .topSection .navBar input {
     display: none;
     border: none;
     border: solid 1px black;
@@ -319,7 +319,7 @@ html {
     font-size: 22px;
     padding: 10px;
   }
-  header nav .signUp {
+  .topSection .navBar .signUp {
     display: none;
     margin-bottom: 13px;
     height: auto;
@@ -334,7 +334,7 @@ html {
     margin-top: -10px;
     margin-right: 25px;
   }
-  header nav .signUp:hover {
+  .topSection .navBar .signUp:hover {
     background-color: #DCDCDC;
   }
 }
@@ -350,14 +350,14 @@ body {
     flex-direction: column;
     padding: 150px 10px 10px 105px;
   }
-  .about h2 {
+  .about .hTwo {
     padding-top: 10px;
     color: white;
     font-size: 4rem;
     font-weight: bold;
     font-family: "Arial Bold", sans-serif;
   }
-  .about p {
+  .about .paragraph {
     color: white;
     font-size: 2.5rem;
     font-weight: 300;
@@ -382,7 +382,7 @@ body {
     max-width: 200px;
     max-height: 200px;
   }
-  .team h3 {
+  .team .hThree {
     color: white;
     font-size: 3rem;
     font-weight: bold;
@@ -407,7 +407,7 @@ body {
     justify-content: space-between;
     display: flex;
   }
-  .team ul li a {
+  .team ul li .contactA {
     padding: 4px;
     font-size: 4rem;
     display: block;
@@ -416,22 +416,6 @@ body {
     color: white;
     border: 1px solid black;
   }
-  .team ul li .linkedin:hover {
-    transition: 0.2s;
-    background-color: #0077B5;
-  }
-  .team ul li .github:hover {
-    transition: 0.2s;
-    background-color: #6e5494;
-  }
-  .team ul li .twitter:hover {
-    transition: 0.2s;
-    background-color: #00aced;
-  }
-  .team ul li .freeCodeCamp:hover {
-    transition: 0.2s;
-    background-color: #006400;
-  }
 }
 @media screen and (min-width: 501px) and (max-width: 1000px) {
   .about {
@@ -439,7 +423,7 @@ body {
     flex-direction: column;
     padding: 0px 10px;
   }
-  .about h2 {
+  .about .hTwo {
     text-align: center;
     padding-top: 10px;
     color: white;
@@ -447,7 +431,7 @@ body {
     font-weight: bold;
     font-family: "Arial Bold", sans-serif;
   }
-  .about p {
+  .about .paragraph {
     text-align: center;
     color: white;
     font-size: 2.5rem;
@@ -458,11 +442,13 @@ body {
     margin: 60px 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-content: center;
   }
   .team .box {
-    margin: 10px 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     max-width: 300px;
@@ -474,7 +460,7 @@ body {
     max-width: 200px;
     max-height: 200px;
   }
-  .team h3 {
+  .team .hThree {
     color: white;
     font-size: 3rem;
     font-weight: bold;
@@ -499,7 +485,7 @@ body {
     justify-content: space-between;
     display: flex;
   }
-  .team ul li a {
+  .team ul li .contactA {
     padding: 4px;
     font-size: 4rem;
     display: block;
@@ -507,22 +493,6 @@ body {
     background-color: black;
     color: white;
     border: 1px solid black;
-  }
-  .team ul li .linkedin:hover {
-    transition: 0.2s;
-    background-color: #0077B5;
-  }
-  .team ul li .github:hover {
-    transition: 0.2s;
-    background-color: #6e5494;
-  }
-  .team ul li .twitter:hover {
-    transition: 0.2s;
-    background-color: #00aced;
-  }
-  .team ul li .freeCodeCamp:hover {
-    transition: 0.2s;
-    background-color: #006400;
   }
 }
 @media screen and (max-width: 500px) {
@@ -532,14 +502,14 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .about h2 {
+  .about .hThree {
     margin: auto;
     font-size: 4rem;
     color: white;
     font-weight: bold;
     font-family: "Arial Bold", sans-serif;
   }
-  .about p {
+  .about .paragraph {
     text-align: center;
     color: white;
     font-size: 2rem;
@@ -563,7 +533,7 @@ body {
     max-width: 200px;
     max-height: 200px;
   }
-  .team h3 {
+  .team .hThree {
     color: white;
     font-size: 3rem;
     font-weight: bold;
@@ -571,11 +541,13 @@ body {
     margin-top: 20px;
   }
   .team .teamInfo {
+    padding-right: 20px;
+    padding-left: 20px;
     color: white;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .team ul {
     margin-top: 5px;
@@ -589,46 +561,34 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  .team ul li a {
+  .team ul li .contactA {
     padding: 4px;
     font-size: 3rem;
     display: block;
     border-radius: 50%;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border: 1px solid black;
-  }
-  .team ul li .linkedin:hover {
-    background-color: white;
-  }
-  .team ul li .github:hover {
-    background-color: white;
-  }
-  .team ul li .twitter:hover {
-    background-color: white;
-  }
-  .team ul li .freeCodeCamp:hover {
-    background-color: white;
   }
 }
 html {
   font-size: 62.5%;
 }
 @media screen and (min-width: 1000px) {
-  footer .bottomContent {
+  .foot .bottomContent {
     color: white;
     margin-top: 50px;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
   }
-  footer .bottom {
+  .foot .bottom {
     margin-bottom: 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  footer .bottom .bottomInput {
+  .foot .bottom .bottomInput {
     display: flex;
     justify-content: space-between;
     width: 500px;
@@ -640,7 +600,7 @@ html {
     border: solid 1px #DCDCDC;
     border-radius: 10px;
   }
-  footer .bottom .sendMsg {
+  .foot .bottom .sendMsg {
     margin-top: 30px;
     margin-bottom: 13px;
     height: auto;
@@ -652,26 +612,23 @@ html {
     background-color: #D3D3D3;
     border: 2px solid #708090;
     border-radius: 10px;
-  }
-  footer .bottom .sendMsg:hover {
-    background-color: #DCDCDC;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 1000px) {
-  footer .bottomContent {
+  .foot .bottomContent {
     color: white;
     margin-top: 50px;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
   }
-  footer .bottom {
+  .foot .bottom {
     margin-bottom: 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  footer .bottom .bottomInput {
+  .foot .bottom .bottomInput {
     display: flex;
     justify-content: space-between;
     width: 500px;
@@ -683,7 +640,7 @@ html {
     border: solid 1px #DCDCDC;
     border-radius: 10px;
   }
-  footer .bottom .sendMsg {
+  .foot .bottom .sendMsg {
     margin-top: 30px;
     margin-bottom: 13px;
     height: auto;
@@ -695,9 +652,6 @@ html {
     background-color: #D3D3D3;
     border: 2px solid #708090;
     border-radius: 10px;
-  }
-  footer .bottom .sendMsg:hover {
-    background-color: #DCDCDC;
   }
 }
 @media screen and (max-width: 500px) {
@@ -731,8 +685,5 @@ html {
     background-color: #D3D3D3;
     border: 2px solid #708090;
     border-radius: 10px;
-  }
-  .sendMsg:hover {
-    background-color: white;
   }
 }
