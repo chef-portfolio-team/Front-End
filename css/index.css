@@ -1,3 +1,18 @@
+.btnMix {
+  margin-bottom: 13px;
+  height: auto;
+  width: auto;
+  padding: 10px 15px 15px 10px;
+  font-size: 2.4rem;
+  color: black;
+  font-weight: bold;
+  background-color: #D3D3D3;
+  border: 2px solid #708090;
+  border-radius: 10px;
+}
+.mobileBtnMix {
+  background-color: white;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -125,4 +140,550 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+html {
+  /* Best Practice */
+  font-size: 62.5%;
+}
+@media screen and (min-width: 1000px) {
+  .topSection {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: 1px solid #DCDCDC;
+    width: 100%;
+    height: auto;
+    background-color: black;
+  }
+  .topSection .logo {
+    display: block;
+    width: 200px;
+    height: 80px;
+    margin-left: 100px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .topSection .navBar {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .topSection .navBar .aLinks {
+    padding: 10px 15px 10px 15px;
+    color: white;
+    margin-right: 25px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .topSection .navBar input {
+    display: flex;
+    align-items: center;
+    border: none;
+    border: solid 1px black;
+    border-radius: 10px;
+    height: 40px;
+    width: 240px;
+    margin-right: 20px;
+    font-size: 22px;
+    padding: 10px;
+  }
+  .topSection .navBar .signUp {
+    margin-bottom: 13px;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 15px 10px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    border: 2px solid #708090;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+  }
+}
+@media screen and (min-width: 510px) and (max-width: 1000px) {
+  .topSection {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid white;
+    height: auto;
+    overflow-y: auto;
+    background-color: black;
+  }
+  .topSection .logo {
+    margin: auto;
+    max-height: 80px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .topSection .navBar {
+    color: white;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .topSection .navBar .aLinks {
+    color: white;
+    margin: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .topSection .navBar .overLink:hover {
+    background-color: black;
+  }
+  .topSection .navBar input {
+    display: none;
+    border: none;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 55px;
+    font-size: 22px;
+    padding: 10px;
+  }
+  .topSection .navBar .signUp {
+    display: none;
+    margin-bottom: 13px;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 15px 10px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    border: 2px solid #708090;
+    border-radius: 10px;
+    margin-top: -10px;
+    margin-right: 25px;
+  }
+  .topSection .navBar .signUp:hover {
+    background-color: #DCDCDC;
+  }
+}
+@media screen and (max-width: 500px) {
+  .topSection {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    height: auto;
+    overflow-y: auto;
+    background-color: black;
+  }
+  .topSection .logo {
+    display: block;
+    margin: auto;
+    max-height: 80px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .topSection .navBar {
+    color: white;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .topSection .navBar .aLinks {
+    color: white;
+    margin: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  .topSection .navBar .overLink:hover {
+    background-color: black;
+  }
+  .topSection .navBar input {
+    display: none;
+    border: none;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: 55px;
+    font-size: 22px;
+    padding: 10px;
+  }
+  .topSection .navBar .signUp {
+    display: none;
+    margin-bottom: 13px;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 15px 10px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    border: 2px solid #708090;
+    border-radius: 10px;
+    margin-top: -10px;
+    margin-right: 25px;
+  }
+  .topSection .navBar .signUp:hover {
+    background-color: #DCDCDC;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: black;
+}
+@media screen and (min-width: 1000px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 10px 10px 105px;
+  }
+  .about .hTwo {
+    padding-top: 10px;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Arial Bold", sans-serif;
+  }
+  .about .paragraph {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 25px;
+  }
+  .team {
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .team .box {
+    max-width: 300px;
+    height: auto;
+  }
+  .team .images {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .team .hThree {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .team .teamInfo {
+    color: white;
+    margin-top: 10px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .team ul {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .team ul li {
+    color: white;
+    justify-content: space-between;
+    display: flex;
+  }
+  .team ul li .contactA {
+    padding: 4px;
+    font-size: 4rem;
+    display: block;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+  .about .hTwo {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Arial Bold", sans-serif;
+  }
+  .about .paragraph {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 25px;
+  }
+  .team {
+    margin: 60px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: center;
+  }
+  .team .box {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    height: auto;
+  }
+  .team .images {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .team .hThree {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .team .teamInfo {
+    color: white;
+    margin-top: 10px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .team ul {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .team ul li {
+    color: white;
+    justify-content: space-between;
+    display: flex;
+  }
+  .team ul li .contactA {
+    padding: 4px;
+    font-size: 4rem;
+    display: block;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about {
+    margin-top: 10px;
+    padding: 5px 10;
+    display: flex;
+    flex-direction: column;
+  }
+  .about .hThree {
+    margin: auto;
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    font-family: "Arial Bold", sans-serif;
+  }
+  .about .paragraph {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+  .team {
+    margin: 30px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team .box {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .team .images {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .team .hThree {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .team .teamInfo {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+  .team ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .team ul li {
+    display: flex;
+    justify-content: space-between;
+  }
+  .team ul li .contactA {
+    padding: 4px;
+    font-size: 3rem;
+    display: block;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+@media screen and (min-width: 1000px) {
+  .foot .bottomContent {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .foot .bottom {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .foot .bottom .bottomInput {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    border: solid 1px #DCDCDC;
+    border-radius: 10px;
+  }
+  .foot .bottom .sendMsg {
+    margin-top: 30px;
+    margin-bottom: 13px;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 15px 10px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    border: 2px solid #708090;
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+  .foot .bottomContent {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .foot .bottom {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .foot .bottom .bottomInput {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: auto;
+    margin-top: 20px;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    border: solid 1px #DCDCDC;
+    border-radius: 10px;
+  }
+  .foot .bottom .sendMsg {
+    margin-top: 30px;
+    margin-bottom: 13px;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 15px 10px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    border: 2px solid #708090;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bottom {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .bottomInput {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+    border: solid 1px #DCDCDC;
+    border-radius: 10px;
+  }
+  .sendMsg {
+    margin-top: 30px;
+    margin-bottom: 13px;
+    height: auto;
+    width: auto;
+    padding: 10px 15px 15px 10px;
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    background-color: #D3D3D3;
+    border: 2px solid #708090;
+    border-radius: 10px;
+  }
 }
