@@ -182,11 +182,110 @@ html {
   }
 }
 
-// .borderRight {
-//     border-right: 1px solid black;
-// }
+// ian
+.headerOne {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  border-bottom: 1px solid @btnHover;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  .logo {
+    
+    display: block;
+    width: 200px;
+    height: 80px;
+    margin-left: 5px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  .navSection {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    .aSection {
+      padding: 10px 15px 10px 15px;
+      color: white;
+      margin-right: 25px;
+      font-size: 3rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  }
+}
 
-// .sideBorder {
-//     margin-right: 25px;
-//     padding-right: 20px;
-// }-
+@media screen and(min-width: 510px) and (max-width: 1000px) {
+  .headerOne {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid white;
+    height: auto;
+    overflow-y: auto;
+    background-color: black;
+    .logo {
+      margin: auto;
+      max-height: 80px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .navSection {
+      color: white;
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .aSection {
+        color: white;
+        margin: auto;
+        font-size: 3rem;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 15px;
+
+      }
+    }
+  }
+ }
+
+ @media screen and(max-width: 500px) {
+  .headerOne {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    height: auto;
+    overflow-y: auto;
+    background-color: black;
+    .logo {
+      display: block;
+      margin: auto;
+      max-height: 80px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .navSection {
+      color: white;
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .aSection {
+        color: white;
+        margin: auto;
+        font-size: 3rem;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+ }
