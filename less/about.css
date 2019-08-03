@@ -1,27 +1,23 @@
-.main-content {
-  padding: 200px 0px 0px 0px;
-  margin-bottom: 20px;
+html {
+  font-size: 62.5%;
 }
-.secondary {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  color: white;
 }
-.secondary .htext {
-  font-size: 2rem;
-  font-weight: bold;
-}
-.secondary .ptext {
-  font-size: 1.2rem;
-}
-.secondary .panel {
-  width: 500px;
-}
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 1000px) {
   .main-content {
-    padding: 20px 15px 15px 0px;
+    padding: 200px 0px 0px 0px;
     margin-bottom: 20px;
-    text-align: center;
+  }
+  .first-heading {
+    margin-left: 30px;
+    font-size: 2.6rem;
+  }
+  .testing {
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 1.8rem;
   }
   .secondary {
     display: flex;
@@ -29,7 +25,42 @@
     align-items: center;
   }
   .secondary .htext {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .secondary .ptext {
+    padding-top: 10px;
     font-size: 2rem;
+  }
+  .secondary .panel {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-content {
+    padding: 20px 15px 15px 0px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .main-content .first-heading {
+    text-align: center;
+    font-size: 2.6rem;
+  }
+  .main-content .testing {
+    text-align: center;
+    padding: 20px;
+    margin-top: 5px;
+    font-size: 1.8rem;
+  }
+  .secondary {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .secondary .htext {
+    font-size: 4rem;
     font-weight: bold;
   }
   .secondary .ptext {
@@ -37,44 +68,42 @@
   }
   .secondary .panel {
     width: auto;
-    padding: 0px 20px 20px 0px;
+    padding: 0px 10px 0px 30px;
   }
 }
-@media screen and (min-width: 501px) and (max-width: 1000px) {
+@media screen and (min-width: 501px) and (max-width: 999px) {
   .main-content {
     width: auto;
     padding: 20px 15px 15px 0px;
     margin-bottom: 20px;
     text-align: center;
   }
-  .panel {
+  .main-content .first-heading {
+    margin-left: 30px;
+    font-size: 2.6rem;
+  }
+  .main-content .testing {
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 1.8rem;
+  }
+  .secondary {
+    width: auto;
+  }
+  .secondary .htext {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .secondary .ptext {
+    padding-top: 10px;
+    font-size: 2rem;
+  }
+  .secondary .panel {
     width: auto;
     padding: 0px 20px 20px 0px;
   }
-}
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: #000000;
-}
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
-body {
-  color: white;
-}
-h1 {
-  font-size: 1.5rem;
-}
-h2 {
-  font-size: 1.5rem;
-}
-p {
-  margin: 20px 0;
-  line-height: 1.25;
 }
 .home .accordion .panel {
   padding: 30px;

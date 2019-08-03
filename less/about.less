@@ -1,21 +1,44 @@
-.main-content {
-  padding: 200px 0px 0px 0px;
-  margin-bottom: 20px;
+html {
+  font-size: 62.5%;
+}
+body {
+  color: white;
 }
 
-.secondary {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  .htext {
-    font-size: 2rem;
-    font-weight: bold;
+@media screen and(min-width: 1000px) {
+  .main-content {
+    padding: 200px 0px 0px 0px;
+    margin-bottom: 20px;
   }
-  .ptext {
-    font-size: 1.2rem;
+
+  .first-heading {
+    margin-left: 30px;
+    font-size: 2.6rem;
   }
-  .panel {
-    width: 500px;
+
+  .testing {
+    padding: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 1.8rem;
+  }
+
+  .secondary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .htext {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .ptext {
+      padding-top: 10px;
+      font-size: 2rem;
+    }
+    .panel {
+      width: 800px;
+    }
   }
 }
 
@@ -24,13 +47,26 @@
     padding: 20px 15px 15px 0px;
     margin-bottom: 20px;
     text-align: center;
+    .first-heading {
+      text-align: center;
+      font-size: 2.6rem;
+    }
+  
+    .testing {
+      text-align: center;
+      padding: 20px;
+      margin-top: 5px;
+      font-size: 1.8rem;
+    }
+  
   }
   .secondary {
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     .htext {
-      font-size: 2rem;
+      font-size: 4rem;
       font-weight: bold;
     }
     .ptext {
@@ -38,69 +74,60 @@
     }
     .panel {
       width: auto;
-      padding: 0px 20px 20px 0px;
+      padding: 0px 10px 0px 30px;
     }
   }
 }
-@media screen and(min-width: 501px) and (max-width: 1000px) {
+@media screen and(min-width: 501px) and (max-width: 999px) {
   .main-content {
     width: auto;
     padding: 20px 15px 15px 0px;
     margin-bottom: 20px;
     text-align: center;
+    .first-heading {
+      margin-left: 30px;
+      font-size: 2.6rem;
+    }
+  
+    .testing {
+      padding: 20px;
+      margin-top: 5px;
+      margin-left: 10px;
+      font-size: 1.8rem;
+    }
+  
   }
-  .panel {
+  .secondary {
     width: auto;
-    padding: 0px 20px 20px 0px;
+    .htext {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .ptext {
+      padding-top: 10px;
+      font-size: 2rem;
+    }
+    .panel {
+      width: auto;
+      padding: 0px 20px 20px 0px;
+    }
   }
 }
 
-
-// in the index.less
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: #000000;
-
-}
-
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
-body {
-  color: white;
-}
-h1 {
-   font-size: 1.5rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-p {
-  margin: 20px 0;
-  line-height: 1.25;
-}
+// in the index.less1
 
 .home {
-  
-  
   .accordion {
-    
     .panel {
       padding: 30px;
       border: 1px solid white;
-      
+
       .panel-bar {
         display: flex;
         justify-content: space-between;
-        
+
         .panel-buttons {
-          
           button {
             cursor: pointer;
           }
@@ -110,11 +137,11 @@ p {
           }
         }
       }
-      
+
       .panel-content {
         display: none;
       }
-      
+
       .toggle-on {
         display: block;
       }
